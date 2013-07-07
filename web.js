@@ -3,7 +3,7 @@ var fs = require('fs');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send(fs.ReadFileSync(index.html));
+  fs.ReadFileSync('/bitstarter/index.html','utf8');
 });
 
 var port = process.env.PORT || 5000;
